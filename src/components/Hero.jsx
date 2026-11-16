@@ -62,8 +62,13 @@ export default function Hero() {
       if (raf != null) cancelAnimationFrame(raf);
     };
   }, []);
-  const line3 = t.hero.title[2];
-  const split = line3.match(/^(.*?[,，、]\s*)(.+)$/);
+  const accent = t.hero.highlight;
+  const renderLine = (line) =>
+    accent && line.includes(accent)
+      ? line.split(accent).flatMap((part, i) =>
+          i === 0 ? [part] : [<span key={i} className="hero-title-accent">{accent}</span>, part]
+        )
+      : line;
 
   return (
     <section className="hero" id="top" ref={sectionRef}>
@@ -73,18 +78,11 @@ export default function Hero() {
           {t.hero.eyebrow}
         </Reveal>
         <Reveal as="h1" className="hero-title" delay={100} immediate>
-          <span className="hero-title-line">{t.hero.title[0]}</span>
-          <span className="hero-title-line">{t.hero.title[1]}</span>
-          <span className="hero-title-line">
-            {split ? (
-              <>
-                {split[1]}
-                <span className="hero-title-accent">{split[2]}</span>
-              </>
-            ) : (
-              line3
-            )}
-          </span>
+          {t.hero.title.map((line, i) => (
+            <span className="hero-title-line" key={i}>
+              {renderLine(line)}
+            </span>
+          ))}
         </Reveal>
         <Reveal delay={220} immediate>
           <a className="pill pill-cream hero-cta" href={t.hero.ctaHref}>

@@ -23,7 +23,18 @@ export default function Join() {
         <Reveal className="join-body" delay={180}>
           {t.join.body}
         </Reveal>
-        <Reveal delay={260}>
+        <Reveal className="join-details" delay={260}>
+          <h3 className="join-details-title">{t.join.detailsTitle}</h3>
+          <dl className="join-details-table">
+            {t.join.details.map((row) => (
+              <div className="join-details-row" key={row.label}>
+                <dt>{row.label}</dt>
+                <dd>{row.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+        <Reveal delay={340}>
           <a className="pill pill-cream join-cta" href={t.join.ctaHref}>
             {t.join.cta}
           </a>

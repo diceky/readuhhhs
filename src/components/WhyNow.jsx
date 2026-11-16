@@ -5,6 +5,8 @@ import whynowDeco from "../assets/whynow-deco.svg";
 
 // ~15ms per character, so the full heading types in in roughly a second.
 const TYPE_MS = 50;
+// Wait for the section to settle into frame before typing begins.
+const START_DELAY_MS = 400;
 
 export default function WhyNow() {
   const { t } = useLang();
@@ -29,22 +31,27 @@ export default function WhyNow() {
       (entries) => {
         if (!entries[0].isIntersecting) return;
         io.disconnect();
-        timer = setInterval(() => {
-          progress += 1;
-          if (progress >= total) {
-            clearInterval(timer);
-            timer = null;
-          }
-          setTyped(Math.min(progress, total));
-        }, TYPE_MS);
+        timer = setTimeout(() => {
+          timer = setInterval(() => {
+            progress += 1;
+            if (progress >= total) {
+              clearInterval(timer);
+              timer = null;
+            }
+            setTyped(Math.min(progress, total));
+          }, TYPE_MS);
+        }, START_DELAY_MS);
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     );
     io.observe(el);
 
     return () => {
       io.disconnect();
-      if (timer) clearInterval(timer);
+      if (timer) {
+        clearTimeout(timer);
+        clearInterval(timer);
+      }
     };
   }, [total]);
 
