@@ -976,6 +976,13 @@ html[lang="en"] .hero-title-accent {
   color: var(--ink);
 }
 
+.papers-source-arrow {
+  display: inline-block;
+  vertical-align: -1px;
+  margin-left: 5px;
+  color: currentColor;
+}
+
 .papers-footnote {
   padding: 28px var(--gutter) 0;
   font-size: 14px;

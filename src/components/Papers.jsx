@@ -80,9 +80,30 @@ export default function Papers() {
               <span className="papers-category">{item.category}</span>
             </p>
             <h3 className="papers-title">{item.title}</h3>
-            <p className={`papers-source${item.source === "link" ? " is-link" : ""}`}>
-              {item.source}
-            </p>
+            <a
+              className="papers-source is-link"
+              href={item.source}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              link
+              <svg
+                className="papers-source-arrow"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.5 9.5L9.5 2.5M4.5 2.5h5v5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         ))}
       </div>
