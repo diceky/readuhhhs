@@ -16,9 +16,9 @@ export const en = {
   },
   whyNow: {
     label: "WHY NOW",
-    heading: ["Of course you would ask life advice to AI.", "Huh? It could be harmful? How so?"],
+    heading: ["Of course you would use AI for life advice. Duh.", "How could it could be harmful?"],
     paragraphs: [
-      "If was a student today, I would have undoubtedly used it for everything — coursework, life advice, every possible purpose. Some parents, teachers, politicians and researchers deny that, but really nobody understands it yet.",
+      "If were a student today, I would have undoubtedly used AI for everything — coursework, life advice, every possible purpose. Some parents, teachers, politicians and researchers deny that, but really nobody understands it yet.",
       "That doesn't mean we can sit around waiting for someone else to figure it out.",
       "Now that AI has commoditized surface knowledge, our job as humans is to formulate, share and discuss our thoughts together. Let's talk it through, to pave the way ourselves.",
     ],
@@ -49,7 +49,7 @@ export const en = {
     themes: [
       {
         title: "AI as a given",
-        body: "Rather than debating AI usage, we regard AI as a given and build our thinking on top of it.",
+        body: "Rather than debating AI usage, we treat AI usage as a given and build our thinking on top of it.",
       },
       {
         title: "AI Psychosis",
@@ -133,7 +133,7 @@ export const en = {
     heading: "FACILITATOR",
     name: "Dice Yukita",
     bio: [
-      "Dice is design technologist building at the intersection of AI, product design, and human cognition. I help organizations translate emerging AI capabilities into products and workflows that balance automation with cognitive integrity.",
+      "Dice is design technologist building at the intersection of AI, product design, and human cognition. He helps organizations translate emerging AI capabilities into products and workflows that balance automation with cognitive integrity.",
       "His background spans strategic design consulting at duhhh and IDEO, creative agencies in Tokyo, PhD research in AI augmented cognition, and teaching the magic of design and prototyping at schools and universities worldwide."
     ],
   },
@@ -149,7 +149,7 @@ export const en = {
       { label: "Venue", value: "Online? Curio School?" },
       { label: "Fee", value: "3,500 JPY (tax included)" },
       { label: "Capacity", value: "Approx. 12 people" },
-      { label: "Requirements", value: "We have a BYOD policy - daily access to some AI tool is required, paid or free." },
+      { label: "Requirements", value: "We operate on a BYOD policy - daily access to some AI tool is required, paid or free." },
     ],
     cta: "Join the trial session",
     ctaHref: "https://duhhh.school/en",
