@@ -18,8 +18,8 @@ export const en = {
     label: "WHY NOW",
     heading: ["Of course you would use AI for life advice. Duh.", "How could it could be harmful?"],
     paragraphs: [
-      "If were a student today, I would have undoubtedly used AI for everything — coursework, life advice, every possible purpose. Some parents, teachers, politicians and researchers deny that, but really nobody understands it yet.",
-      "That doesn't mean we can sit around waiting for someone else to figure it out.",
+      "If were a student today, I would have absolutely used AI for everything — from homework, life advice, to career consultation. Teachers, politicians and researchers like to deny that (totally understandable!), but really nobody understands it yet.",
+      "But that doesn't mean we can sit around and wait for someone else to figure this out.",
       "Now that AI has commoditized surface knowledge, our job as humans is to formulate, share and discuss our thoughts together. Let's talk it through, to pave the way ourselves.",
     ],
     claim: "Readuhhhs (リーダーズ) is a reading group for the AI era.",
