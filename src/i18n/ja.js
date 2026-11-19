@@ -134,7 +134,7 @@ export const ja = {
     name: "Dice Yukita | 油木田大祐",
     bio: [
       "IDEOで数々のグローバル企業の新規事業のデザインを行った後に、人間中心のデザインプロセスとAIとの認知的協働に関する学術的研究をかけ合わせたduhhhを起ち上げる。IDEO以前は、東京のクリエイティブスタジオdot by dot（現Whatever）に勤務。国内外のさまざまな学校でデザイン思考やプロトタイピングを教えている。",
-      "慶應義塾大学でコンピューターサイエンスの学士号、メディアデザインの修士号を取得。Royal College of Art及びPratt Instituteにて、Global Innovation Designプログラムを修了。現在はUniversity of Queenslandの博士課程でAIと人間の認知的協働の研究にも従事。",
+      "慶應義塾大学でコンピューターサイエンスの学士号、メディアデザインの修士号を取得。ロンドンのRoyal College of Art及びニューヨークのPratt Instituteにて、Global Innovation Designプログラムを修了。現在はオーストラリアのUniversity of Queenslandの博士課程でAIと人間の認知的協働の研究にも従事。",
     ],
   },
   join: {
@@ -143,10 +143,10 @@ export const ja = {
     body: "",
     detailsTitle: "体験セッションの詳細",
     details: [
-      { label: "日程", value: "2027年3月" },
+      { label: "日程", value: "2026年12月" },
       { label: "対象", value: "満18歳以上の方" },
       { label: "所要時間", value: "2時間" },
-      { label: "会場", value: "オンライン？キュリオスクール？" },
+      { label: "会場", value: "オンライン（3月なら対面＠Curio？）" },
       { label: "費用", value: "3,500円（税込み）" },
       { label: "定員", value: "12名程度" },
       { label: "参加要件", value: "BYOD制です。有料無料問わず、何かしらのAIツールへの日常的なアクセスは必須です。" },

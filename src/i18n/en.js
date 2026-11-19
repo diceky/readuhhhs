@@ -143,10 +143,10 @@ export const en = {
     body: "",
     detailsTitle: "Details",
     details: [
-      { label: "Date", value: "March 2027" },
+      { label: "Date", value: "December 2026" },
       { label: "Who can join", value: "Anyone 18 or older" },
       { label: "Duration", value: "2 hours" },
-      { label: "Venue", value: "Online? Curio School?" },
+      { label: "Venue", value: "Online (@Curio School if in March?)" },
       { label: "Fee", value: "3,500 JPY (tax included)" },
       { label: "Capacity", value: "Approx. 12 people" },
       { label: "Requirements", value: "We operate on a BYOD policy - daily access to some AI tool is required, paid or free." },

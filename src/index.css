@@ -615,9 +615,8 @@ html[lang="en"] .hero-title-accent {
   font-weight: 700;
   color: var(--paper);
   margin-bottom: 12px;
-  color: #db527d;
-  background-color: white;
   display: inline-block;
+  color: white;
 }
 
 .themes-body {
@@ -629,9 +628,13 @@ html[lang="en"] .hero-title-accent {
 
 .themes-closing {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.45;
-  color: #fff;
+}
+
+.themes-closing span {
+  color: #db527d;
+  background-color: white;
 }
 
 .themes-frame {
